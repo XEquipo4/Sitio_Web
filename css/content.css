@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+  }
+  label.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+    text-decoration: none;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    text-decoration: none;
+  }
+  nav ul li a{
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+  }
+  .checkbtn{
+    font-size: 40px;
+    color: white;
+    float: right;
+    line-height: 95px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 25px;
+      font-weight: bolder;
+      padding-left: 25px;
+    }
+    nav ul li a{
+      font-size: 15px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 500px;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  
+  /*Galeria de presents*/
+  .galery-presents{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:15px;
+    padding: 10px;
+    background-color: #1b9bff;
+  }
+  .galery-presents div{
+    font-size: 20px;
+    font-family:'Times New Roman', Times, serif;
+    background-color: darkorchid;
+    border-radius: 10px;
+
+  }
+  .galery-presents div h2{
+    color: black;
+    background-color: white;
+    text-align: center;
+  }
+  .galery-presents div img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  .galery-presents div p{
+    color:white;
+    background-color: rgb(43, 151, 43);
+    text-align: justify;
+  }
+  .galery-presents div button{
+    background-color: #2c3e50;
+    font-size: 25px;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+  }
+  .galery-presents div button a{
+    color: white;
+    text-decoration: none;
+  }
+  .galery-presents div button a:hover{
+    cursor: pointer;
+    border-bottom: 4px solid rgb(219, 240, 35);
+    padding: 5px;
+  }
+  /***********************************************/
+  @media screen and (max-width:650px)
+  {
+      /*Portada*/
+  .port-intro{
+    background-image: url("/img/portada.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    padding: 30px;
+  }
+  .port-intro h1{
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: monospace;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 160px;
+    color: antiquewhite;
+  }
+    
+        /*Galeria de presents*/
+    .galery-presents{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap:15px;
+        padding: 10px;
+        background-color: #1b9bff;
+    }
+    header{
+      width: 100%;
+      height: 600px;
+    }
+    .info-cont{
+      padding: 40px;
+    }
+    .info-cont h2{
+      font-size: 20px;
+      text-align: center;
+    }
+    .time{
+      background-color: rgb(243, 148, 114);
+      padding: 10px;
+    }
+     .palabra{
+      font-size: 25px;
+      font-family: Arial, Helvetica, sans-serif;
+      text-align: justify;
+      font-weight: bold;
+      margin: 10px;
+    }
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+.pie-pagina .grupo-1 .box h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+}
+.pie-pagina .grupo-2{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.pie-pagina .grupo-2 small{
+    font-size: 15px;
+}
+@media screen and (max-width:800px){
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap:30px;
+        padding: 35px 0px;
+    }
+}
+header{
+  width: 100%;
+  height: 300px;
+}
+.info-cont{
+  padding: 80px;
+  font-size: 35px;
+  text-align: center;
+}
+.time{
+  background-color: rgb(243, 148, 114);
+  padding: 10px;
+}
+ .palabra{
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: justify;
+  font-weight: bold;
+  margin: 10px;
+}
